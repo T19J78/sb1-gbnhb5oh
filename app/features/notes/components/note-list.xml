@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView items="{{ notes }}" itemTap="{{ onNoteTap }}" class="list-group">
+    <ListView.itemTemplate>
+        <ns:note-card />
+    </ListView.itemTemplate>
+</ListView>

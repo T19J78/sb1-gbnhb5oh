@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView orientation="horizontal" class="p-2">
+    <StackLayout orientation="horizontal">
+        <Repeater items="{{ categories }}">
+            <Repeater.itemTemplate>
+                <Label text="{{ name }}" 
+                       class="m-1 p-2 rounded-full text-white" 
+                       style="background-color: {{ color }}"
+                       tap="{{ $parent.onCategoryTap }}" />
+            </Repeater.itemTemplate>
+        </Repeater>
+    </StackLayout>
+</ScrollView>

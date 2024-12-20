@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GridLayout columns="*, auto" class="p-4 bg-white m-2 rounded-lg">
+    <StackLayout col="0">
+        <Label text="{{ title }}" class="text-lg font-bold text-gray-800" />
+        <Label text="{{ content }}" class="text-gray-600 text-sm" textWrap="true" />
+        <Label text="{{ category }}" class="text-xs text-purple-600 mt-1" />
+    </StackLayout>
+    <Label col="1" text="{{ updatedAt, 'dd MMM' }}" class="text-xs text-gray-400" />
+</GridLayout>
